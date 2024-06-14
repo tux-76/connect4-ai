@@ -3,7 +3,5 @@ Debug/
 .settings
 .project
 .cproject
-Release/sources.mk
-Release/src/subdir.mk
 
 tests/
