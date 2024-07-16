@@ -13,7 +13,7 @@ To install on Linux or MacOS:
 3. Make the file from the release directory. `make -C Release all`
 4. Run the executable. `./Release/Connect4-AI`
 
-**NOTE:** If you are on _Windows_ or this method doesn't work for you, try copying the `src/Connect4_AI.cpp` file and running it with your own compiler, ignoring the makefile.
+**NOTE:** If you are on _Windows_ or this method doesn't work for you, try using an IDE or your own compiler to compile the source code (in the src folder), ignoring the makefile.
 
 ## Controls
 Before each move you will be presented with the current Connect-4 board, with blank spaces being represented by a `-`, like so:
