@@ -5,7 +5,7 @@
  *      Author: tux76
  */
 
-#include "Minimax.h"
+#include "minimax.h"
 
 AI::AI (int _processingDepth, float _spaceWeight, string _name) {
 	nodesProcessed = 0;

@@ -11,7 +11,7 @@ To install on Linux or MacOS:
 1. Be sure you have the `g++` compiler and that it supports C++11 or later. The `make` and `git` packages are also required.
 2. Clone the repository. `git clone https://github.com/tux-76/Connect4-AI`
 3. Make the file from the release directory. `make -C Release all`
-4. Run the executable. `./Release/Connect4-AI`
+4. Run the executable. `./Release/connect4-ai`
 
 **NOTE:** If you are on _Windows_ or this method doesn't work for you, try using an IDE or your own compiler to compile the source code (in the src folder), ignoring the makefile.
 

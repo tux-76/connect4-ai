@@ -4,10 +4,10 @@
 //============================================================================
 
 
-#include "Game.h"
-#include "TimeIt.h"
-#include "Minimax.h"
-#include "Interface.h"
+#include "game.h"
+#include "interface.h"
+#include "minimax.h"
+#include "timeit.h"
 
 // MAIN
 // =================================

@@ -5,7 +5,7 @@
  *      Author: tux76
  */
 
-#include "Interface.h"
+#include "interface.h"
 
 Interface::Interface (Connect4 &_game, AI &_computerX, AI &_computerY) : game(_game), computerX(_computerX), computerY(_computerY) {
 

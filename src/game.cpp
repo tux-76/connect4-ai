@@ -5,7 +5,7 @@
  *      Author: tux76
  */
 
-#include "Game.h"
+#include "game.h"
 
 
 void Connect4::getConnectionLines () {

@@ -12,8 +12,8 @@
 #include <cmath>
 using namespace std;
 
-#include "TimeIt.h"
-#include "Game.h"
+#include "timeit.h"
+#include "game.h"
 
 #define MAX_GS_VALUE 3
 

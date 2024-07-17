@@ -11,9 +11,9 @@
 #include <iostream>
 using namespace std;
 
-#include "Game.h"
-#include "Minimax.h"
-#include "TimeIt.h"
+#include "game.h"
+#include "minimax.h"
+#include "timeit.h"
 
 
 class Interface {

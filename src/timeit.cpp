@@ -5,7 +5,7 @@
  *      Author: tux76
  */
 
-#include "TimeIt.h"
+#include "timeit.h"
 
 void TimeIt::start () {
 	startT=clock();

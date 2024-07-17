@@ -4,13 +4,25 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
-../src/Connect4_AI.cpp 
+../src/connect4_ai.cpp \
+../src/game.cpp \
+../src/interface.cpp \
+../src/minimax.cpp \
+../src/timeit.cpp 
 
 CPP_DEPS += \
-./src/Connect4_AI.d 
+./src/connect4_ai.d \
+./src/game.d \
+./src/interface.d \
+./src/minimax.d \
+./src/timeit.d 
 
 OBJS += \
-./src/Connect4_AI.o 
+./src/connect4_ai.o \
+./src/game.o \
+./src/interface.o \
+./src/minimax.o \
+./src/timeit.o 
 
 
 # Each subdirectory must supply rules for building sources it contributes
@@ -25,7 +37,7 @@ src/%.o: ../src/%.cpp src/subdir.mk
 clean: clean-src
 
 clean-src:
-	-$(RM) ./src/Connect4_AI.d ./src/Connect4_AI.o
+	-$(RM) ./src/connect4_ai.d ./src/connect4_ai.o ./src/game.d ./src/game.o ./src/interface.d ./src/interface.o ./src/minimax.d ./src/minimax.o ./src/timeit.d ./src/timeit.o
 
 .PHONY: clean-src
 
