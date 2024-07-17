@@ -59,7 +59,11 @@ Connect4::Connect4 (int _board[42]) {
 	}
 	getConnectionLines();
 
-	scoringPlayer, piecesScore, spacesScore, adjacentPieces, adjacentSpaces = 0;
+	scoringPlayer = 0;
+	piecesScore = 0;
+	spacesScore = 0;
+	adjacentPieces = 0;
+	adjacentSpaces = 0;
 }
 
 void Connect4::calcPossiblePlaysByColumn() {
