@@ -1,6 +1,8 @@
 # Connect-4 AI
 C++ Artificial Intelligence Program for Playing Connect-4 Using the Minimax Algorithm
 
+**NOTE:** This program now works as a library! I have breifly updated the instructions, but expect a full README update soon!
+
 ## Program overview
 This algorithm searches the possible outcomes of any Connect-4 board and selects the best possible move for the current player. It generally searches to depth 8, but it optimizes the depth as the game progresses.
 
@@ -10,10 +12,10 @@ The user interface runs in the terminal. It is more focused on exploring the cap
 To install on Linux or MacOS:
 1. Be sure you have the `g++` compiler and that it supports C++11 or later. The `make` and `git` packages are also required.
 2. Clone the repository. `git clone https://github.com/tux-76/Connect4-AI`
-3. Make the file from the release directory. `make -C Release all`
-4. Run the executable. `./Release/connect4-ai`
+3. Make the examples directory. `make -C examples all`
+4. Run the executable. `./examples/terminal-example`
 
-**NOTE:** If you are on _Windows_ or this method doesn't work for you, try using an IDE or your own compiler to compile the source code (in the src folder), ignoring the makefile.
+**NOTE:** I'm sorry for the lack of Windows support. Try Googling: make for Windows.
 
 ## Controls
 Before each move you will be presented with the current Connect-4 board, with blank spaces being represented by a `-`, like so:
