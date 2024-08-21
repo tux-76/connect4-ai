@@ -20,6 +20,8 @@ using namespace std;
 #define SPACE_X 1
 #define SPACE_O -1
 
+namespace Connect4AI {
+
 const int L_DIAGONAL_START_POINTS[6]  = {0, 1, 2, 3, 7, 14};
 const int R_DIAGONAL_START_POINTS[6] = {3, 4, 5, 6, 13, 20};
 
@@ -51,5 +53,5 @@ public:
 	int getState();
 };
 
-
+} /* Connect4AI */
 #endif /* GAME_H_ */

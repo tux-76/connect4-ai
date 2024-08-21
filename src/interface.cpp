@@ -6,6 +6,7 @@
  */
 
 #include "interface.h"
+using namespace Connect4AI;
 
 Interface::Interface (Connect4 &_game, AI &_computerX, AI &_computerY) : game(_game), computerX(_computerX), computerY(_computerY) {
 

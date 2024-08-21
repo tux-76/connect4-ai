@@ -6,6 +6,7 @@
  */
 
 #include "game.h"
+using namespace Connect4AI;
 
 
 void Connect4::getConnectionLines () {

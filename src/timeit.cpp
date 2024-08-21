@@ -6,6 +6,7 @@
  */
 
 #include "timeit.h"
+using namespace Connect4AI;
 
 void TimeIt::start () {
 	startT=clock();

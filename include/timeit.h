@@ -11,6 +11,8 @@
 #include <iostream>
 #include <ctime>
 
+namespace Connect4AI {
+
 class TimeIt {
 public:
 	time_t startT, endT;
@@ -18,5 +20,5 @@ public:
 	double stop (bool print=true);
 };
 
-
+} /* Connect4AI */
 #endif /* TIMEIT_H_ */

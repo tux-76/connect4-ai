@@ -8,6 +8,7 @@
 #include "interface.h"
 #include "minimax.h"
 #include "timeit.h"
+using namespace Connect4AI;
 
 // MAIN
 // =================================

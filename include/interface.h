@@ -15,6 +15,7 @@ using namespace std;
 #include "minimax.h"
 #include "timeit.h"
 
+namespace Connect4AI {
 
 class Interface {
 private:
@@ -35,6 +36,5 @@ public:
 	bool play();
 };
 
-
-
+} /* Connect4AI */
 #endif /* INTERFACE_H_ */

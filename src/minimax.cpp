@@ -6,6 +6,7 @@
  */
 
 #include "minimax.h"
+using namespace Connect4AI;
 
 AI::AI (int _processingDepth, float _spaceWeight, string _name) {
 	nodesProcessed = 0;

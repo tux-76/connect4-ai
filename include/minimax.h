@@ -17,6 +17,8 @@ using namespace std;
 
 #define MAX_GS_VALUE 3
 
+namespace Connect4AI {
+
 class AI {
 private:
 	TimeIt timer;
@@ -41,5 +43,5 @@ public:
 	int selectPlayDynamic(Connect4 &game);
 };
 
-
+} /* Connect4AI */
 #endif /* MINIMAX_H_ */
