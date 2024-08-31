@@ -11,9 +11,9 @@
 #include <iostream>
 using namespace std;
 
-#include "game.h"
-#include "minimax.h"
-#include "timeit.h"
+#include "connect4_ai/game.h"
+#include "connect4_ai/minimax.h"
+#include "connect4_ai/timeit.h"
 
 namespace Connect4AI {
 

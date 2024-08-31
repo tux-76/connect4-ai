@@ -5,7 +5,7 @@
  *      Author: tux76
  */
 
-#include "game.h"
+#include "connect4_ai/game.h"
 using namespace Connect4AI;
 
 

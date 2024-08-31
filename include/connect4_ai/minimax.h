@@ -12,8 +12,8 @@
 #include <cmath>
 using namespace std;
 
-#include "timeit.h"
-#include "game.h"
+#include "connect4_ai/timeit.h"
+#include "connect4_ai/game.h"
 
 #define MAX_GS_VALUE 3
 

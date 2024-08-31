@@ -5,7 +5,7 @@
  *      Author: tux76
  */
 
-#include "timeit.h"
+#include "connect4_ai/timeit.h"
 using namespace Connect4AI;
 
 void TimeIt::start () {

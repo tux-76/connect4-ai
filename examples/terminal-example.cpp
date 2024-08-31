@@ -3,24 +3,12 @@
 // Author      : tux76
 //============================================================================
 
-
-#include "game.h"
-#include "interface.h"
-#include "minimax.h"
-#include "timeit.h"
+#include "connect4_ai.h"
 using namespace Connect4AI;
 
 // MAIN
 // =================================
 int main() {
-
-//	Connect4 game;
-////	computer.selectPlay(game);
-//	for (int play : game.getPossiblePlays()) {
-//		cout << play << " ";
-//	}
-//	cout << endl;
-
 	bool running = 1;
 	while (running) {
 		int board[42] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};

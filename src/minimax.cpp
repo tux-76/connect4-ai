@@ -5,7 +5,7 @@
  *      Author: tux76
  */
 
-#include "minimax.h"
+#include "connect4_ai/minimax.h"
 using namespace Connect4AI;
 
 AI::AI (int _processingDepth, float _spaceWeight, string _name) {

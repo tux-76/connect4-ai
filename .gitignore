@@ -6,3 +6,6 @@ Release/
 .cproject
 
 tests/
+
+*.o
+*.a
