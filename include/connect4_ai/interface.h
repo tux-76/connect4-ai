@@ -23,12 +23,13 @@ private:
 	AI &computerX;
 	AI &computerY;
 	TimeIt timer;
+	bool aiIsDynamic;
 public:
-	Interface(Connect4 &_game, AI &_computerX, AI &_computerY);
+	Interface(Connect4 &_game, AI &_computerX, AI &_computerY, bool _aiIsDynamic = true);
 
 	static char getSpaceChar(int space);
 
-	void printGame(bool oneLine = 0);
+	static void printGame(Connect4 &_game, bool oneLine = 0);
 
 	void printState(AI &computer);
 	void printInfo();

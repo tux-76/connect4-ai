@@ -8,8 +8,8 @@
 #include "connect4_ai/interface.h"
 using namespace Connect4AI;
 
-Interface::Interface (Connect4 &_game, AI &_computerX, AI &_computerY) : game(_game), computerX(_computerX), computerY(_computerY) {
-
+Interface::Interface (Connect4 &_game, AI &_computerX, AI &_computerY, bool _aiIsDynamic) : game(_game), computerX(_computerX), computerY(_computerY) {
+	aiIsDynamic = _aiIsDynamic;
 }
 
 char Interface::getSpaceChar(int space) {
@@ -19,15 +19,15 @@ char Interface::getSpaceChar(int space) {
 	return '?';
 }
 
-void Interface::printGame(bool oneLine) {
+void Interface::printGame(Connect4 &_game, bool oneLine) {
 	cout << "6 5 4 3 2 1 0" << endl;
 	for (int i = 41; i>=0; i--) {
-		cout << getSpaceChar(game.board[i]) << " ";
+		cout << getSpaceChar(_game.board[i]) << " ";
 		if (i % 7 == 0 && !oneLine) {
 			cout << endl;
 		}
 	}
-	cout << "Next: " << getSpaceChar(game.turn) << endl;
+	cout << "Next: " << getSpaceChar(_game.turn) << endl;
 }
 
 void Interface::printState(AI &computer) {
@@ -55,7 +55,7 @@ bool Interface::play() {
 		cout << endl;
 
 		gameState = game.getState();
-		printGame();
+		printGame(game);
 
 		if (game.turn == 1) {
 			computer = &computerX;
@@ -127,7 +127,11 @@ bool Interface::play() {
 			catch (const std::invalid_argument& e) {
 				if (input == "" /*&& gameState == GS_ACTIVE*/) {
 					// COMPUTER PLAY
-					play = computer->selectPlayDynamic(game);
+					if (aiIsDynamic) {
+						play = computer->selectPlayDynamic(game);
+					} else {
+						play = computer->selectPlay(game);
+					}
 				}
 				else {
 					cout << "Please try again." << endl << endl;

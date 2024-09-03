@@ -108,8 +108,6 @@ int AI::selectPlay(Connect4 &game) {
 //			cout << play << ":" << value << endl;
 		game.undoPlay();
 	}
-	cout << "Selected: " << bestPlay % 7 << endl;
-	cout << "Predicted Outcome: " << bestValue << endl;
 	return bestPlay;
 }
 

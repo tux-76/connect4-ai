@@ -18,3 +18,4 @@ $(TARGET): $(OBJS)
 clean:
 	rm -f $(OBJS) lib/$(TARGET)
 	$(MAKE) -C examples clean
+	$(MAKE) -C utils clean

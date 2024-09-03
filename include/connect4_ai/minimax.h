@@ -25,7 +25,7 @@ private:
 public:
 	int nodesProcessed;
 	int processingDepth;
-	int spaceWeight;
+	float spaceWeight;
 	string name;
 	AI (int _processingDepth, float _spaceWeight, string _name = "");
 
