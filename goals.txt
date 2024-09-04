@@ -1,0 +1,4 @@
+- Add memoising to AI
+- Add tools to calculate other possible routes
+- Build Minimax library to use for other games.
+- Finish round-robin utility

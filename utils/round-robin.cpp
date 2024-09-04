@@ -39,9 +39,9 @@ int main() {
 	// Initialize
 	std::ofstream file("data/space-weight-table.csv", std::ios::trunc);
 
-	const float minValue = -0.3;
-	const float maxValue = -0.1;
-	const float step = 0.01;
+	const float minValue = -0.3; 	// MODIFY ***
+	const float maxValue = -0.1; 	// MODIFY ***
+	const float step = 0.01; 		// MODIFY ***
 	const int numPlayers = (maxValue-minValue) / step + 1;
 	cout << minValue << '>' << maxValue << ':' << step << endl;
 	file << minValue << '_' << maxValue << '_' << step <<',';
@@ -51,7 +51,7 @@ int main() {
 	vector<AI> players;
 	for (int i = 0; i < numPlayers; i++) {
 		float variable = minValue+i*step;
-		AI computer(6, variable, "Player " + to_string(i));
+		AI computer(6, variable, "Player " + to_string(i));  // MODIFY  ***
 		cout << '\t' << computer.name << endl
 				<< "\t  Depth: " << computer.processingDepth << endl
 				<< "\t  SpaceWeight: " << computer.spaceWeight << endl;
