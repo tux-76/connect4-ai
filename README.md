@@ -1,7 +1,7 @@
 # Connect-4 AI
 C++ Artificial Intelligence Program for Playing Connect-4 Using the Minimax Algorithm
 
-**NOTE:** This program now works as a library! I have breifly updated the instructions, but expect a full README update soon!
+**NOTE:** This program now works as a library!
 
 ## Program overview
 This algorithm searches the possible outcomes of any Connect-4 board and selects the best possible move for the current player. It generally searches to depth 8, but it optimizes the depth as the game progresses.
@@ -40,3 +40,9 @@ So if the user wants to play **O** against the AI as **X**, he will press `Enter
 
 ## The algorithm behind the AI
 The AI in this program is built around the **Minimax** algorithm. _Minimax_ is a type of algorithm that allows computers to determine the best possible move for any state of a turn-based game. It essentially scans the possible outcomes of any _game state_ and determines which outcome is most desirable and achievable, given that the other player is also playing optimally. For any _game state_ (the arrangement of pieces on the board), the computer first gets the possible plays of the next player. After it gets the likelyhood that Player 1 will win—known as the _state value_—for each of the child _game states_ (either by computing that the game is over or by running the Minimax algorithm recursively), it then selects either the _minimum_ or the _maximum_ of all those values based on who's turn it is (Player 1 wants the outcome with the _greatest_ value, wheras his opponent, Player 2, wants the most _negative_ value). This function will run itself again until it reaches the maximum depth, which is necessary because a full calculation would take too long. Additionally, this program performs a mathematical calculation after every process to optimize the depth so that the next calculation will take about 1 second to complete, maximizing the power of the AI when the game is further along. Thus, for any game state, the _Minimax_ algorithm determines the likelyhood that Player1 will win given both players play optimally. Selecting the best move, then, is as simple as running _Minimax_ for each possible move and returning the most desirable one.
+
+## Improvements & Limitations
+- ⭐ Bitboards bitboards bitboards! Capability could be greatly improved, perhaps even perfect, with bitboards.
+- ⭐ Threading for easy implementation into programs with loops
+- Better move ordering
+- Iterative deeping could allow for move time limits
